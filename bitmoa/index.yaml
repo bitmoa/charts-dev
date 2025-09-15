@@ -6,10 +6,10 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T08:30:27.610936865Z"
+    created: "2025-09-15T08:36:31.165226555Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
-    digest: 3399fa4b8834313d918357b1aac010a110532afd9a20506eb54bb706cee596b4
+    digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
     home: https://bitmoa.net
     icon: https://dyltqmyl993wv.cloudfront.net/downloads/logos/bitmoa-mark.png
     keywords:
@@ -26,6 +26,6 @@ entries:
     - https://github.com/bitmoa/charts/tree/main/bitmoa/common
     type: library
     urls:
-    - https://charts.bitmoa.net/bitmoa/common-2.31.4.tgz
+    - https://charts-dev.bitmoa.net/bitmoa/common-2.31.4.tgz
     version: 2.31.4
-generated: "2025-09-15T08:30:27.610019683Z"
+generated: "2025-09-15T08:36:31.164153303Z"
