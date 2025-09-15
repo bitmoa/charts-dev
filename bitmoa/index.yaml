@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:16:47.740321718Z"
+    created: "2025-09-15T09:16:50.14044406Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:16:47.742833963Z"
+    created: "2025-09-15T09:16:50.143622574Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:16:47.747457117Z"
+    created: "2025-09-15T09:16:50.14752699Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:16:47.748201092Z"
+    created: "2025-09-15T09:16:50.148290138Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:16:47.752301478Z"
+    created: "2025-09-15T09:16:50.152214914Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:16:47.755575571Z"
+    created: "2025-09-15T09:16:50.155437393Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -224,6 +224,43 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/external-dns-9.0.3.tgz
     version: 9.0.3
+  fluentd:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: fluentd
+          image: ghcr.io/bitmoa/fluentd:1.19.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.19.0
+    created: "2025-09-15T09:16:50.159665011Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: Fluentd collects events from various data sources and writes them
+      to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
+    digest: eec9a22e5a9ff9f56fe9d792c73ed25bd05f80dda450b4b6e00adbf62cb97e0f
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluentd/img/fluentd-stack-220x234.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: fluentd
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/fluentd
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/fluentd-7.2.5.tgz
+    version: 7.2.5
   gitlab-runner:
   - annotations:
       category: Infrastructure
@@ -236,7 +273,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-09-15T09:16:47.758094199Z"
+    created: "2025-09-15T09:16:50.162195656Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -273,7 +310,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:16:47.761579682Z"
+    created: "2025-09-15T09:16:50.165689505Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -296,4 +333,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:16:47.737525283Z"
+generated: "2025-09-15T09:16:50.137823887Z"
