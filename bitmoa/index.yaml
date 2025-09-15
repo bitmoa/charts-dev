@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:16:41.397521663Z"
+    created: "2025-09-15T09:16:47.740321718Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:16:41.399893543Z"
+    created: "2025-09-15T09:16:47.742833963Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:16:41.404836065Z"
+    created: "2025-09-15T09:16:47.747457117Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:16:41.405574438Z"
+    created: "2025-09-15T09:16:47.748201092Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:16:41.410050786Z"
+    created: "2025-09-15T09:16:47.752301478Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:16:41.413295369Z"
+    created: "2025-09-15T09:16:47.755575571Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -224,6 +224,43 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/external-dns-9.0.3.tgz
     version: 9.0.3
+  gitlab-runner:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: gitlab-runner
+          image: ghcr.io/bitmoa/gitlab-runner:18.3.0-debian-12-r0
+        - name: gitlab-runner-helper
+          image: ghcr.io/bitmoa/gitlab-runner-helper:18.3.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 18.3.0
+    created: "2025-09-15T09:16:47.758094199Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: Gitlab Runner is an auxiliary application for Gitlab installations.
+      Written in Go, it allows to run CI/CD jobs and send the results back to Gitlab.
+    digest: 00ba977a784a5d9603de52e39ad1359d47ea5fea67934990405865d3c68960ca
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitlab-runner/img/gitlab-runner-stack-220x234.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: gitlab-runner
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/gitlab-runner
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/gitlab-runner-1.1.8.tgz
+    version: 1.1.8
   zookeeper:
   - annotations:
       category: Infrastructure
@@ -236,7 +273,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:16:41.416530234Z"
+    created: "2025-09-15T09:16:47.761579682Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -259,4 +296,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:16:41.394768664Z"
+generated: "2025-09-15T09:16:47.737525283Z"
