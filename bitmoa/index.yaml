@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:16:38.976421649Z"
+    created: "2025-09-15T09:16:39.967116198Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:16:38.978907045Z"
+    created: "2025-09-15T09:16:39.970015581Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:16:38.983286498Z"
+    created: "2025-09-15T09:16:39.974811596Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:16:38.984009121Z"
+    created: "2025-09-15T09:16:39.975540434Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -149,6 +149,41 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/common-2.31.4.tgz
     version: 2.31.4
+  external-dns:
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: external-dns
+          image: ghcr.io/bitmoa/external-dns:0.18.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.18.0
+    created: "2025-09-15T09:16:39.978942562Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: c222dd5795c3c472d0be726ca562348ee3825dbd2867bdec261277d273863e7b
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: external-dns
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/external-dns
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/external-dns-9.0.3.tgz
+    version: 9.0.3
   zookeeper:
   - annotations:
       category: Infrastructure
@@ -161,7 +196,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:16:38.987564642Z"
+    created: "2025-09-15T09:16:39.982444669Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -184,4 +219,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:16:38.973757134Z"
+generated: "2025-09-15T09:16:39.963671962Z"
