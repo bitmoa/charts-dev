@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:16:39.967116198Z"
+    created: "2025-09-15T09:16:41.397521663Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:16:39.970015581Z"
+    created: "2025-09-15T09:16:41.399893543Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:16:39.974811596Z"
+    created: "2025-09-15T09:16:41.404836065Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:16:39.975540434Z"
+    created: "2025-09-15T09:16:41.405574438Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -149,6 +149,46 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/common-2.31.4.tgz
     version: 2.31.4
+  etcd:
+  - annotations:
+      category: Database
+      images: |
+        - name: etcd
+          image: ghcr.io/bitmoa/etcd:3.6.4-debian-12-r0
+        - name: os-shell
+          image: ghcr.io/bitmoa/os-shell:12-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.6.4
+    created: "2025-09-15T09:16:41.410050786Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: b2a07228afab8455fe9e048230c746936a1b9f99d3ccbe30cd5a92d7d5f3285d
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: etcd
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/etcd
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/etcd-12.0.18.tgz
+    version: 12.0.18
   external-dns:
   - annotations:
       category: DeveloperTools
@@ -159,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:16:39.978942562Z"
+    created: "2025-09-15T09:16:41.413295369Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -196,7 +236,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:16:39.982444669Z"
+    created: "2025-09-15T09:16:41.416530234Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -219,4 +259,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:16:39.963671962Z"
+generated: "2025-09-15T09:16:41.394768664Z"
