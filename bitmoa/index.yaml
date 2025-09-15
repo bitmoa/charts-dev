@@ -1,12 +1,55 @@
 apiVersion: v1
 entries:
+  apache:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: apache
+          image: ghcr.io/bitmoa/apache:2.4.65-debian-12-r0
+        - name: apache-exporter
+          image: ghcr.io/bitmoa/apache-exporter:1.0.10-debian-12-r0
+        - name: git
+          image: ghcr.io/bitmoa/git:2.51.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.4.65
+    created: "2025-09-15T09:16:32.028223351Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: Apache HTTP Server is an open-source HTTP server. The goal of this
+      project is to provide a secure, efficient and extensible server that provides
+      HTTP services in sync with the current HTTP standards.
+    digest: 394eab452f36f9afbc3e6d6a491d397f28eae814094b4f23d3d9dfc9d2095ef1
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apache/img/apache-stack-220x234.png
+    keywords:
+    - apache
+    - http
+    - https
+    - www
+    - web
+    - reverse proxy
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: apache
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/apache
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/apache-11.4.29.tgz
+    version: 11.4.29
   common:
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:15:01.312695224Z"
+    created: "2025-09-15T09:16:32.029045586Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -40,7 +83,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:15:01.316190628Z"
+    created: "2025-09-15T09:16:32.031900006Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -63,4 +106,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:15:01.311675241Z"
+generated: "2025-09-15T09:16:32.024347373Z"
