@@ -115,7 +115,7 @@ jobs:
     name: Send notification
     needs: [validation-check, integrity-check]
     if: ${{ always() && github.repository_owner == 'bitmoa' && (needs.validation-check.outputs.result != 'ok' || needs.integrity-check.outputs.result != 'ok') }}
-    uses: bitmoa/support/.github\/workflows/gchat-notification.yml@main
+    uses: bitmoa/support/.github/workflows/gchat-notification.yml@main
     with:
       workflow: ${{ github.workflow }}
       job-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

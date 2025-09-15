@@ -50,7 +50,7 @@ jobs:
           echo "labels=${labels}" >> $GITHUB_OUTPUT
           echo "resource_url=${resource_url}" >> $GITHUB_OUTPUT
   call-pr-review-comment:
-    uses: bitmoa/support/.github\/workflows/pr-review-comment.yml@main
+    uses: bitmoa/support/.github/workflows/pr-review-comment.yml@main
     needs: pr-info
     permissions:
       contents: read

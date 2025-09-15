@@ -17,5 +17,5 @@ concurrency:
 jobs:
   call-comments-workflow:
     if: ${{ github.repository_owner == 'bitmoa' }}
-    uses: bitmoa/support/.github\/workflows/comment-created.yml@main
+    uses: bitmoa/support/.github/workflows/comment-created.yml@main
     secrets: inherit

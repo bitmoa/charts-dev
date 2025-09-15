@@ -92,7 +92,7 @@ jobs:
     needs:
       - push-tag
     if: ${{ always() && (needs.push-tag.result == 'failure') }}
-    uses: bitmoa/support/.github\/workflows/gchat-notification.yml@main
+    uses: bitmoa/support/.github/workflows/gchat-notification.yml@main
     with:
       workflow: ${{ github.workflow }}
       job-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
