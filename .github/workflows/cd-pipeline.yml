@@ -148,8 +148,8 @@ jobs:
             helm repo index bitmoa --url https://charts.bitmoa.net/bitmoa
           fi
           # Commit and push changes if any
-          if [ "$(git rev-parse --abbrev-ref HEAD)" = "index" ] && [ -z "$(git rev-parse --verify HEAD 2>/dev/null)" ]; then
-            echo "Orphan branch detected (no commits yet)"
+          if ! git rev-parse --verify HEAD >/dev/null 2>&1; then
+            echo "Orphan branch detected, creating initial commit..."
             git add bitmoa
             git commit -m "Initial commit for Helm index [skip ci]"
             git push origin index
