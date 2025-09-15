@@ -111,9 +111,9 @@ jobs:
 
           # Create or update index.yaml for GitHub Pages
           if [ -f ./packages/index.yaml ]; then
-            helm repo index ./packages --url https://charts.bitmoa.net/ --merge ./packages/index.yaml
+            helm repo index ./packages --url https://charts-dev.bitmoa.net/ --merge ./packages/index.yaml
           else
-            helm repo index ./packages --url https://charts.bitmoa.net/
+            helm repo index ./packages --url https://charts-dev.bitmoa.net/
           fi
       - name: Checkout repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
@@ -143,9 +143,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # Build or merge the Helm repository index
           if [ -f bitmoa/index.yaml ]; then
-            helm repo index bitmoa --url https://charts.bitmoa.net/bitmoa --merge bitmoa/index.yaml
+            helm repo index bitmoa --url https://charts-dev.bitmoa.net/bitmoa --merge bitmoa/index.yaml
           else
-            helm repo index bitmoa --url https://charts.bitmoa.net/bitmoa
+            helm repo index bitmoa --url https://charts-dev.bitmoa.net/bitmoa
           fi
           # Commit and push changes if any
           if ! git rev-parse --verify HEAD >/dev/null 2>&1; then
