@@ -3,6 +3,12 @@
 
 name: '[CI/CD] CD Pipeline'
 on: # rebuild any PRs and main branch changes
+  workflow_dispatch:
+    inputs:
+      chart:
+        description: 'Chart name to deploy (optional, will auto-detect if not provided)'
+        required: false
+        type: string
   push:
     branches:
       - main
@@ -30,6 +36,22 @@ jobs:
         name: 'Get modified charts'
         run: |
           cd charts
+
+          # Check if this is a manual run with specified chart
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && -n "${{ github.event.inputs.chart }}" ]]; then
+            chart_name="${{ github.event.inputs.chart }}"
+            if [[ -d "bitmoa/${chart_name}" ]]; then
+              echo "chart=${chart_name}" >> $GITHUB_OUTPUT
+              echo "result=ok" >> $GITHUB_OUTPUT
+              echo "Manual execution for chart: ${chart_name}"
+              exit 0
+            else
+              echo "error=Specified chart '${chart_name}' does not exist in bitmoa/ directory" >> $GITHUB_OUTPUT
+              echo "result=fail" >> $GITHUB_OUTPUT
+              exit 1
+            fi
+          fi
+
           files_changed="$(git show --pretty="" --name-only)"
           # Adding || true to avoid "Process exited with code 1" errors
           charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "bitmoa/[^/]*" | sort | uniq || true)"
