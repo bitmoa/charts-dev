@@ -148,10 +148,17 @@ jobs:
             helm repo index bitmoa --url https://charts.bitmoa.net/bitmoa
           fi
           # Commit and push changes if any
-          if ! git diff --quiet; then
+          if [ "$(git rev-parse --abbrev-ref HEAD)" = "index" ] && [ -z "$(git rev-parse --verify HEAD 2>/dev/null)" ]; then
+            echo "Orphan branch detected (no commits yet)"
             git add bitmoa
-            git commit -m "Update Helm index [skip ci]"
-            git push origin HEAD:index
+            git commit -m "Initial commit for Helm index [skip ci]"
+            git push origin index
           else
-            echo "No changes to commit."
+            if ! git diff --quiet; then
+              git add bitmoa
+              git commit -m "Update Helm index [skip ci]"
+              git push origin HEAD:index
+            else
+              echo "No changes to commit."
+            fi
           fi
