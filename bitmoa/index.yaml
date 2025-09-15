@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T08:36:31.165226555Z"
+    created: "2025-09-15T09:15:01.312695224Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -28,4 +28,39 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/common-2.31.4.tgz
     version: 2.31.4
-generated: "2025-09-15T08:36:31.164153303Z"
+  zookeeper:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
+          image: ghcr.io/bitmoa/os-shell:12-debian-12-r0
+        - name: zookeeper
+          image: ghcr.io/bitmoa/zookeeper:3.9.3-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.9.3
+    created: "2025-09-15T09:15:01.316190628Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: Apache ZooKeeper provides a reliable, centralized register of configuration
+      data and services for distributed applications.
+    digest: 8f91dbd7b6f7e01703526392a23d3ee157e501e6633f0be782b8c20d16f6e021
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: zookeeper
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/zookeeper
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
+    version: 13.8.7
+generated: "2025-09-15T09:15:01.311675241Z"
