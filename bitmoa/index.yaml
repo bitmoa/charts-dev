@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:16:32.028223351Z"
+    created: "2025-09-15T09:16:36.580366601Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -43,13 +43,52 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/apache-11.4.29.tgz
     version: 11.4.29
+  aspnet-core:
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: aspnet-core
+          image: ghcr.io/bitmoa/aspnet-core:9.0.8-debian-12-r0
+        - name: dotnet-sdk
+          image: ghcr.io/bitmoa/dotnet-sdk:9.0.304-debian-12-r0
+        - name: git
+          image: ghcr.io/bitmoa/git:2.51.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 9.0.8
+    created: "2025-09-15T09:16:36.582815436Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: ASP.NET Core is an open-source framework for web application development
+      created by Microsoft. It runs on both the full .NET Framework, on Windows, and
+      the cross-platform .NET Core.
+    digest: 67bf7f4a3c217a61f4edad83f489d36e07c628533359f7f9df46533d3eebffee
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/aspnet-core/img/aspnet-core-stack-220x234.png
+    keywords:
+    - asp.net
+    - dotnet
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: aspnet-core
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/aspnet-core
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/aspnet-core-7.0.35.tgz
+    version: 7.0.35
   common:
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:16:32.029045586Z"
+    created: "2025-09-15T09:16:36.583987886Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -83,7 +122,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:16:32.031900006Z"
+    created: "2025-09-15T09:16:36.587021858Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -106,4 +145,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:16:32.024347373Z"
+generated: "2025-09-15T09:16:36.577511874Z"
