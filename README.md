@@ -18,7 +18,7 @@ Popular applications, provided by [Bitmoa](https://bitmoa.net), ready to launch 
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitmoacharts/<chart>
+helm install my-release https://charts-dev.bitmoa.net/<chart>
 ```
 
 
@@ -61,8 +61,8 @@ Please refer to the [Quick Start guide](https://helm.sh/docs/intro/quickstart/) 
 
 Useful Helm Client Commands:
 
-- Install a chart: `helm install my-release oci://registry-1.docker.io/bitmoacharts/<chart>`
-- Upgrade your application: `helm upgrade my-release oci://registry-1.docker.io/bitmoacharts/<chart>`
+- Install a chart: `helm install my-release https://charts-dev.bitmoa.net/bitmoa/<chart>`
+- Upgrade your application: `helm upgrade my-release https://charts-dev.bitmoa.net/bitmoa/<chart>`
 
 ## License
 
