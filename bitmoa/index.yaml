@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:17:28.988300656Z"
+    created: "2025-09-15T09:17:30.76712904Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:17:28.990805424Z"
+    created: "2025-09-15T09:17:30.770214347Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:17:28.995439846Z"
+    created: "2025-09-15T09:17:30.774731757Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:17:28.996182715Z"
+    created: "2025-09-15T09:17:30.775500048Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:17:29.000422272Z"
+    created: "2025-09-15T09:17:30.779582887Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:17:29.003729261Z"
+    created: "2025-09-15T09:17:30.782817765Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -234,7 +234,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-09-15T09:17:29.008145109Z"
+    created: "2025-09-15T09:17:30.787066501Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -283,7 +283,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2025-09-15T09:17:29.018235054Z"
+    created: "2025-09-15T09:17:30.795607038Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -323,7 +323,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-09-15T09:17:29.020856762Z"
+    created: "2025-09-15T09:17:30.798085066Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -360,7 +360,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 12.1.1
-    created: "2025-09-15T09:17:29.023671814Z"
+    created: "2025-09-15T09:17:30.801648324Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -398,7 +398,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.19.4
-    created: "2025-09-15T09:17:29.027987353Z"
+    created: "2025-09-15T09:17:30.80568932Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -433,7 +433,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2025-09-15T09:17:29.030030671Z"
+    created: "2025-09-15T09:17:30.80794499Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -473,7 +473,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.4.1
-    created: "2025-09-15T09:17:29.033065477Z"
+    created: "2025-09-15T09:17:30.810965605Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -513,7 +513,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.516.2
-    created: "2025-09-15T09:17:29.037015321Z"
+    created: "2025-09-15T09:17:30.813814258Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -558,7 +558,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2025-09-15T09:17:29.042717621Z"
+    created: "2025-09-15T09:17:30.819944185Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -599,7 +599,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 6.3.4
-    created: "2025-09-15T09:17:29.047093829Z"
+    created: "2025-09-15T09:17:30.825159008Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -636,7 +636,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 4.2.0
-    created: "2025-09-15T09:17:29.050002377Z"
+    created: "2025-09-15T09:17:30.828040732Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -661,6 +661,41 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/kiam-2.3.16.tgz
     version: 2.3.16
+  kube-state-metrics:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: kube-state-metrics
+          image: ghcr.io/bitmoa/kube-state-metrics:2.16.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 2.16.0
+    created: "2025-09-15T09:17:30.83019882Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: kube-state-metrics is a simple service that listens to the Kubernetes
+      API server and generates metrics about the state of the objects.
+    digest: a25ed1ef4450a7c54b753b9139c025e8ef2d7f2218408fb80a8723262bf58d69
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kube-state-metrics/img/kube-state-metrics-stack-220x234.png
+    keywords:
+    - prometheus
+    - kube-state-metrics
+    - monitoring
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: kube-state-metrics
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/kube-state-metrics
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/kube-state-metrics-5.1.0.tgz
+    version: 5.1.0
   kuberay:
   - annotations:
       category: Infrastructure
@@ -675,7 +710,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.4.2
-    created: "2025-09-15T09:17:29.059318973Z"
+    created: "2025-09-15T09:17:30.840268473Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -712,7 +747,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 9.1.2
-    created: "2025-09-15T09:17:29.062406346Z"
+    created: "2025-09-15T09:17:30.843636169Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -750,7 +785,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:17:29.065183998Z"
+    created: "2025-09-15T09:17:30.846432163Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -773,4 +808,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:17:28.985631628Z"
+generated: "2025-09-15T09:17:30.764290527Z"
