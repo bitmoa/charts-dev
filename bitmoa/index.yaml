@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:17:05.676380217Z"
+    created: "2025-09-15T09:17:08.181422417Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:17:05.678887097Z"
+    created: "2025-09-15T09:17:08.183644147Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:17:05.683405552Z"
+    created: "2025-09-15T09:17:08.188332356Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:17:05.684118573Z"
+    created: "2025-09-15T09:17:08.189077164Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:17:05.68741614Z"
+    created: "2025-09-15T09:17:08.193154449Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:17:05.691505861Z"
+    created: "2025-09-15T09:17:08.196383115Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -234,7 +234,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-09-15T09:17:05.695031974Z"
+    created: "2025-09-15T09:17:08.200484001Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -283,7 +283,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2025-09-15T09:17:05.704366915Z"
+    created: "2025-09-15T09:17:08.208910276Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -323,7 +323,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-09-15T09:17:05.706893543Z"
+    created: "2025-09-15T09:17:08.211385177Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -360,7 +360,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 12.1.1
-    created: "2025-09-15T09:17:05.70970967Z"
+    created: "2025-09-15T09:17:08.214126464Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -386,6 +386,43 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/grafana-12.1.8.tgz
     version: 12.1.8
+  grafana-operator:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: grafana
+          image: ghcr.io/bitmoa/grafana:12.1.1-debian-12-r0
+        - name: grafana-operator
+          image: ghcr.io/bitmoa/grafana-operator:5.19.4-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.19.4
+    created: "2025-09-15T09:17:08.21829459Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: Grafana Operator is a Kubernetes operator that enables the installation
+      and management of Grafana instances, dashboards and plugins.
+    digest: 3900f356fd5d13c9044c5a7d14d86a3bf3f0df07a7df0bcb836a3be31299eb5e
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - grafana
+    - operator
+    - monitoring
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: grafana-operator
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/grafana-operator
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/grafana-operator-4.9.37.tgz
+    version: 4.9.37
   haproxy:
   - annotations:
       category: Infrastructure
@@ -396,7 +433,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2025-09-15T09:17:05.711744519Z"
+    created: "2025-09-15T09:17:08.220373594Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -436,7 +473,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.4.1
-    created: "2025-09-15T09:17:05.715911258Z"
+    created: "2025-09-15T09:17:08.223364055Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -474,7 +511,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:17:05.718753093Z"
+    created: "2025-09-15T09:17:08.226918775Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -497,4 +534,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:17:05.673346231Z"
+generated: "2025-09-15T09:17:08.178537662Z"
