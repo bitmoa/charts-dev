@@ -106,6 +106,23 @@ jobs:
         run: |
           cd charts
           mkdir -p packages
+
+          # Add Helm repository for dependencies
+          echo "Adding Helm repositories..."
+          helm repo add bitmoa https://charts-dev.bitmoa.net/bitmoa/ || true
+          helm repo update
+
+          # Update dependencies
+          echo "Updating dependencies for ${CHART}..."
+          if [ -f "bitmoa/${CHART}/Chart.yaml" ]; then
+            # Check if chart has dependencies
+            if grep -q "dependencies:" "bitmoa/${CHART}/Chart.yaml"; then
+              helm dependency update bitmoa/${CHART}
+            else
+              echo "No dependencies found for ${CHART}"
+            fi
+          fi
+
           # Package the chart
           helm package bitmoa/${CHART} --destination ./packages/
 
@@ -135,21 +152,6 @@ jobs:
           fi
           cd ..
           mkdir -p index/bitmoa
-          # Add Helm repository for dependencies
-          echo "Adding Helm repositories..."
-          helm repo add bitmoa https://charts-dev.bitmoa.net/bitmoa/ || true
-          helm repo update
-
-          # Update dependencies
-          echo "Updating dependencies for ${CHART}..."
-          if [ -f "bitmoa/${CHART}/Chart.yaml" ]; then
-            # Check if chart has dependencies
-            if grep -q "dependencies:" "bitmoa/${CHART}/Chart.yaml"; then
-              helm dependency update bitmoa/${CHART}
-            else
-              echo "No dependencies found for ${CHART}"
-            fi
-          fi
 
           # Copy new chart packages into the index branch folder
           cp charts/packages/*.tgz index/bitmoa/ || true
