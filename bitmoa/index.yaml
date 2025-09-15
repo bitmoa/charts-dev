@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:17:02.120853186Z"
+    created: "2025-09-15T09:17:05.676380217Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:17:02.123115942Z"
+    created: "2025-09-15T09:17:05.678887097Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:17:02.127629413Z"
+    created: "2025-09-15T09:17:05.683405552Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:17:02.128351846Z"
+    created: "2025-09-15T09:17:05.684118573Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:17:02.132875123Z"
+    created: "2025-09-15T09:17:05.68741614Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:17:02.136071945Z"
+    created: "2025-09-15T09:17:05.691505861Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -234,7 +234,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-09-15T09:17:02.140307064Z"
+    created: "2025-09-15T09:17:05.695031974Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -283,7 +283,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2025-09-15T09:17:02.148709121Z"
+    created: "2025-09-15T09:17:05.704366915Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -323,7 +323,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-09-15T09:17:02.151229856Z"
+    created: "2025-09-15T09:17:05.706893543Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -360,7 +360,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 12.1.1
-    created: "2025-09-15T09:17:02.154818887Z"
+    created: "2025-09-15T09:17:05.70970967Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -396,7 +396,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2025-09-15T09:17:02.156856574Z"
+    created: "2025-09-15T09:17:05.711744519Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -422,6 +422,46 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/haproxy-2.2.34.tgz
     version: 2.2.34
+  influxdb:
+  - annotations:
+      category: Database
+      images: |
+        - name: influxdb
+          image: ghcr.io/bitmoa/influxdb:3.4.1-debian-12-r0
+        - name: kubectl
+          image: ghcr.io/bitmoa/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: ghcr.io/bitmoa/os-shell:12-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.4.1
+    created: "2025-09-15T09:17:05.715911258Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: InfluxDB(TM) Core is an open source time-series database. It is a
+      core component of the FDAP (Apache Flight, DataFusion, Arrow, and Parquet) stack.
+    digest: 7150c71c6cd290240c2a55db26d1fe1b629138985aef15baad66c66401e6ac43
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/influxdb/img/influxdb-stack-220x234.png
+    keywords:
+    - influxdb
+    - fdap
+    - database
+    - timeseries
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: influxdb
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/influxdb
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/influxdb-7.1.20.tgz
+    version: 7.1.20
   zookeeper:
   - annotations:
       category: Infrastructure
@@ -434,7 +474,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:17:02.159726328Z"
+    created: "2025-09-15T09:17:05.718753093Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -457,4 +497,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:17:02.118259365Z"
+generated: "2025-09-15T09:17:05.673346231Z"
