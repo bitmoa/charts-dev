@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-09-15T09:17:19.954162635Z"
+    created: "2025-09-15T09:17:23.093628947Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -57,7 +57,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-09-15T09:17:19.956522444Z"
+    created: "2025-09-15T09:17:23.096172542Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -96,7 +96,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-09-15T09:17:19.961533463Z"
+    created: "2025-09-15T09:17:23.100625136Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.31.4
-    created: "2025-09-15T09:17:19.962301939Z"
+    created: "2025-09-15T09:17:23.101357424Z"
     description: A Library Helm Chart for grouping common logic between bitmoa charts.
       This chart is not deployable by itself.
     digest: e5578d44cad10509ae6be950d804b366ac978f279c927ee53c906ae983f39562
@@ -161,7 +161,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.6.4
-    created: "2025-09-15T09:17:19.966661952Z"
+    created: "2025-09-15T09:17:23.105588062Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -199,7 +199,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-09-15T09:17:19.969943465Z"
+    created: "2025-09-15T09:17:23.108821296Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -234,7 +234,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-09-15T09:17:19.974411108Z"
+    created: "2025-09-15T09:17:23.113173114Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -283,7 +283,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2025-09-15T09:17:19.983202616Z"
+    created: "2025-09-15T09:17:23.123102015Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -323,7 +323,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-09-15T09:17:19.985757913Z"
+    created: "2025-09-15T09:17:23.125604854Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -360,7 +360,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 12.1.1
-    created: "2025-09-15T09:17:19.98881832Z"
+    created: "2025-09-15T09:17:23.129256077Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -398,7 +398,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.19.4
-    created: "2025-09-15T09:17:19.993148065Z"
+    created: "2025-09-15T09:17:23.132695566Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -433,7 +433,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2025-09-15T09:17:19.995192421Z"
+    created: "2025-09-15T09:17:23.135588045Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -473,7 +473,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.4.1
-    created: "2025-09-15T09:17:19.998671345Z"
+    created: "2025-09-15T09:17:23.138676888Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -513,7 +513,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.516.2
-    created: "2025-09-15T09:17:20.002001446Z"
+    created: "2025-09-15T09:17:23.14237145Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -558,7 +558,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2025-09-15T09:17:20.008570036Z"
+    created: "2025-09-15T09:17:23.147998958Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -599,7 +599,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 6.3.4
-    created: "2025-09-15T09:17:20.01221926Z"
+    created: "2025-09-15T09:17:23.152485765Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -636,7 +636,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 4.2.0
-    created: "2025-09-15T09:17:20.015153961Z"
+    created: "2025-09-15T09:17:23.1553661Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -661,6 +661,45 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/kiam-2.3.16.tgz
     version: 2.3.16
+  kuberay:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: kuberay-apiserver
+          image: ghcr.io/bitmoa/kuberay-apiserver:1.4.2-debian-12-r0
+        - name: kuberay-operator
+          image: ghcr.io/bitmoa/kuberay-operator:1.4.2-debian-12-r0
+        - name: ray
+          image: ghcr.io/bitmoa/ray:2.49.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.4.2
+    created: "2025-09-15T09:17:23.165799812Z"
+    dependencies:
+    - name: common
+      repository: https://charts-dev.bitmoa.net/bitmoa/
+      tags:
+      - bitmoa-common
+      version: 2.x.x
+    description: KubeRay is a Kubernetes operator for deploying and management of
+      Ray applications on Kubernetes using CustomResourceDefinitions.
+    digest: 54076fd7a4d79286a6fc86c78ae2934f23ecd33da547fb8cc7e5e43bcc53a4a2
+    home: https://bitmoa.net
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kuberay/img/kuberay-stack-220x234.png
+    keywords:
+    - ray
+    - machine-learning
+    - kuberay
+    maintainers:
+    - name: Bitmoa
+      url: https://github.com/bitmoa/charts
+    name: kuberay
+    sources:
+    - https://github.com/bitmoa/charts/tree/main/bitmoa/kuberay
+    urls:
+    - https://charts-dev.bitmoa.net/bitmoa/kuberay-1.4.29.tgz
+    version: 1.4.29
   zookeeper:
   - annotations:
       category: Infrastructure
@@ -673,7 +712,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.9.3
-    created: "2025-09-15T09:17:20.018703859Z"
+    created: "2025-09-15T09:17:23.169549336Z"
     dependencies:
     - name: common
       repository: https://charts-dev.bitmoa.net/bitmoa/
@@ -696,4 +735,4 @@ entries:
     urls:
     - https://charts-dev.bitmoa.net/bitmoa/zookeeper-13.8.7.tgz
     version: 13.8.7
-generated: "2025-09-15T09:17:19.95125253Z"
+generated: "2025-09-15T09:17:23.091003209Z"
