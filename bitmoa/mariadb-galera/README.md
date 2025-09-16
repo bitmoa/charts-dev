@@ -164,7 +164,7 @@ Next, login to the MariaDB server using the `mysql` client and add the PAM authe
 For example,
 
 ```mysql
-CREATE USER 'bitnami'@'localhost' IDENTIFIED VIA pam USING 'mariadb';
+CREATE USER 'bitmoa'@'localhost' IDENTIFIED VIA pam USING 'mariadb';
 ```
 
 With the above example, when the `bitnami` user attempts to login to the MariaDB server, he/she will be authenticated against the LDAP server.
