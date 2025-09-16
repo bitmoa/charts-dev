@@ -136,30 +136,30 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           fetch-depth: 0
-          path: index
-      - name: Update index branch with packaged charts
+          path: publish
+      - name: Update publish branch with packaged charts
         run: |
-          cd index
-          # Ensure we are on 'index' branch (create if it does not exist)
-          if git ls-remote --exit-code --heads origin index >/dev/null 2>&1; then
-            git fetch origin index
-            git checkout index
+          cd publish
+          # Ensure we are on 'publish' branch (create if it does not exist)
+          if git ls-remote --exit-code --heads origin publish >/dev/null 2>&1; then
+            git fetch origin publish
+            git checkout publish
           else
-            git checkout --orphan index
+            git checkout --orphan publish
             # remove all files from the working tree for a clean orphan branch
             git rm -rf . >/dev/null 2>&1 || true
             rm -rf ./* || true
           fi
           cd ..
-          mkdir -p index/bitmoa
+          mkdir -p publish/bitmoa
 
-          # Copy new chart packages into the index branch folder
-          cp charts/packages/*.tgz index/bitmoa/ || true
-          cd index
+          # Copy new chart packages into the publish branch folder
+          cp charts/packages/*.tgz publish/bitmoa/ || true
+          cd publish
           # Configure git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Build or merge the Helm repository index
+          # Build or merge the Helm repository publish
           if [ -f bitmoa/index.yaml ]; then
             helm repo index bitmoa --url https://charts-dev.bitmoa.net/bitmoa --merge bitmoa/index.yaml
           else
@@ -170,12 +170,12 @@ jobs:
             echo "Orphan branch detected, creating initial commit..."
             git add bitmoa
             git commit -m "Initial commit for Helm index [skip ci]"
-            git push origin index
+            git push origin publish
           else
             if ! git diff --quiet; then
               git add bitmoa
               git commit -m "Update Helm index [skip ci]"
-              git push origin HEAD:index
+              git push origin HEAD:publish --rebase
             else
               echo "No changes to commit."
             fi

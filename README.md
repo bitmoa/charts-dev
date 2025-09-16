@@ -21,7 +21,6 @@ Popular applications, provided by [Bitmoa](https://bitmoa.net), ready to launch 
 helm install my-release https://charts-dev.bitmoa.net/<chart>
 ```
 
-
 ## Vulnerabilities scanner
 
 Each Helm chart contains one or more containers. Those containers use images provided by Bitmoa and other upstream projects. The exact image registries and tags are defined per chart (see the values.yaml of each chart). Bitmoa-published images are primarily available at ghcr.io/bitmoa and docker.io as specified by each chart.
