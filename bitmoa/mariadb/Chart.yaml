@@ -37,4 +37,4 @@ maintainers:
 name: mariadb
 sources:
 - https://github.com/bitmoa/charts/tree/main/bitmoa/mariadb
-version: 22.0.0
+version: 22.0.4

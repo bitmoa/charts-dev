@@ -242,7 +242,7 @@ spec:
                   if [[ -f "${MARIADB_MASTER_ROOT_PASSWORD_FILE:-}" ]]; then
                       password_aux=$(cat "$MARIADB_MASTER_ROOT_PASSWORD_FILE")
                   fi
-                  mariadb-admin ping -uroot -p"${password_aux}"
+                  mariadb-admin ping -uroot -p"${password_aux}" -h 127.0.0.1
           {{- end }}
           {{- if .Values.secondary.customLivenessProbe }}
           livenessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.secondary.customLivenessProbe "context" $) | nindent 12 }}
@@ -257,7 +257,7 @@ spec:
                   if [[ -f "${MARIADB_MASTER_ROOT_PASSWORD_FILE:-}" ]]; then
                       password_aux=$(cat "$MARIADB_MASTER_ROOT_PASSWORD_FILE")
                   fi
-                  mariadb-admin status -uroot -p"${password_aux}"
+                  mariadb-admin status -uroot -p"${password_aux}" -h 127.0.0.1
           {{- end }}
           {{- if .Values.secondary.customReadinessProbe }}
           readinessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.secondary.customReadinessProbe "context" $) | nindent 12 }}
@@ -272,7 +272,7 @@ spec:
                   if [[ -f "${MARIADB_MASTER_ROOT_PASSWORD_FILE:-}" ]]; then
                       password_aux=$(cat "$MARIADB_MASTER_ROOT_PASSWORD_FILE")
                   fi
-                  mariadb-admin ping -uroot -p"${password_aux}"
+                  mariadb-admin ping -uroot -p"${password_aux}" -h 127.0.0.1
           {{- end }}
           {{- end }}
           {{- if .Values.secondary.resources }}
