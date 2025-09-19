@@ -175,7 +175,7 @@ jobs:
             if ! git diff --quiet; then
               git add bitmoa
               git commit -m "Update Helm index [skip ci]"
-              git push origin HEAD:publish --rebase
+              git push origin HEAD:publish
             else
               echo "No changes to commit."
             fi
