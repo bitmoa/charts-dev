@@ -32,4 +32,4 @@ maintainers:
 name: rabbitmq
 sources:
 - https://github.com/bitmoa/charts/tree/main/bitmoa/rabbitmq
-version: 16.0.14
+version: 16.0.15

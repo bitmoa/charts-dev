@@ -194,6 +194,8 @@ spec:
                     fi
           {{- end }}
           env:
+            - name: ERL_ROOTDIR
+              value: {{ .Values.global.erlRootPath | quote }}
             - name: BITMOA_DEBUG
               value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
             - name: MY_POD_IP
