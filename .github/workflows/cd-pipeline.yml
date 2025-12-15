@@ -28,7 +28,7 @@ jobs:
       result: ${{ steps.get-chart.outputs.result }}
     if: ${{ github.repository_owner == 'bitmoa' }}
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
         with:
           path: charts
           fetch-depth: 2 # to be able to obtain files changed in the latest commit
@@ -92,7 +92,7 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
         name: Checkout Repository
         with:
           path: charts
@@ -133,7 +133,7 @@ jobs:
             helm repo index ./packages --url https://charts-dev.bitmoa.net/
           fi
       - name: Checkout repository
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
         with:
           fetch-depth: 0
           path: publish
